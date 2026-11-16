@@ -1,0 +1,208 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    background: #f4f5ff;
+    color: #42435e;
+}
+
+.header {
+    background: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 15px #7771;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #7774c9;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666681;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #8178d9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 35px auto;
+    min-height: 75vh;
+}
+
+.welcome {
+    padding: 45px 30px;
+    background: linear-gradient(120deg, #dceaff, #e9ddff);
+    border-radius: 24px;
+    margin-bottom: 35px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    color: #5e5b9f;
+}
+
+.welcome p {
+    line-height: 1.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card, .panel, .notice {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #7771;
+}
+
+.card {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #716bc0;
+}
+
+.card p {
+    color: #88889d;
+}
+
+.card span {
+    color: #8278d8;
+    font-size: 14px;
+}
+
+.emoji {
+    font-size: 38px;
+}
+
+.notice {
+    margin-top: 25px;
+    background: #eeeaff;
+}
+
+.panel {
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #dcdaf0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+button {
+    background: #8178d9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px 3px;
+}
+
+button:hover {
+    background: #6860bb;
+}
+
+.item {
+    background: #f2f0ff;
+    border-radius: 12px;
+    padding: 13px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.item button {
+    padding: 7px 12px;
+    font-size: 13px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.timer {
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    color: #7770cc;
+    margin: 25px 0;
+}
+
+.food-result {
+    text-align: center;
+    font-size: 28px;
+    padding: 30px;
+    color: #7770cc;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #999;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    .timer {
+        font-size: 48px;
+    }
+}

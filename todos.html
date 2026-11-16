@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>待辦事項</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+<a href="../index.html" class="logo">🎓 生活小管家</a>
+<nav>
+<a href="../index.html">首頁</a>
+<a href="schedule.html">課程管理</a>
+<a href="todos.html">待辦事項</a>
+<a href="pomodoro.html">番茄鐘</a>
+<a href="food.html">今天吃什麼</a>
+</nav>
+</header>
+
+<main class="container">
+<h1>📝 我的待辦事項</h1>
+<p>把重要事情記下來，一項一項完成！</p>
+
+<section class="panel">
+<h3>新增任務</h3>
+<form id="todoForm">
+<input id="todoInput" placeholder="輸入要完成的事情..." required>
+<button type="submit">新增任務</button>
+</form>
+<p id="progress"></p>
+<div id="todoList"></div>
+</section>
+</main>
+
+<footer>大學生生活小管家 💜</footer>
+<script src="../js/todos.js"></script>
+</body>
+</html>
